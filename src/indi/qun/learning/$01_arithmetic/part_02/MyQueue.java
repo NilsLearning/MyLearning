@@ -14,6 +14,7 @@ public class MyQueue {
         System.out.println(myQueue.toString());
         String dequeue = myQueue.dequeue();
         System.out.println("出队元素:"+dequeue);
+        System.out.println(myQueue.toString());
         myQueue.enqueue("4");
         System.out.println(myQueue.toString());
     }
