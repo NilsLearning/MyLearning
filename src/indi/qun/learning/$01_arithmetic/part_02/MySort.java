@@ -111,13 +111,17 @@ public class MySort {
         }
     }
 
+    /**
+     * 归并排序
+     * @param numbers 数组
+     */
     public void mergeSort(int[] numbers){
         mergeSortSon(numbers,0,numbers.length-1);
     }
 
 
     /**
-     * 归并排序
+     * 归并排序递归段
      * @param numbers
      */
     public void mergeSortSon(int[] numbers,int startIndex,int endIndex) {
@@ -125,14 +129,8 @@ public class MySort {
         int middle = (startIndex+endIndex)/2;
         mergeSortSon(numbers,startIndex,middle);
         mergeSortSon(numbers,middle+1,endIndex);
-//        merge(numbers,numbers.subList(startIndex,middle),numbers.subList(middle+1,endIndex));
         merge(numbers, startIndex, middle, endIndex);
     }
-
-//    public void merge(List<Integer> numbers, List<Integer> leftIndex, List<Integer> rightIndex) {
-////        int i
-//
-//    }
 
     private  void merge(int[] a, int p, int q, int r) {
         int i = p;
@@ -165,4 +163,52 @@ public class MySort {
             a[p+i] = tmp[i];
         }
     }
+
+    /**
+     * 快速排序
+     * @param numbers
+     */
+    public void quickSort(int[] numbers){
+        quickSortSon(numbers,0,numbers.length-1);
+    }
+
+    /**
+     * 快速排序递归段
+     * @param numbers    数组
+     * @param startIndex 开始位置
+     * @param endIndex   结束位置
+     */
+    public void quickSortSon(int[] numbers,int startIndex,int endIndex){
+        if (startIndex >= endIndex) return;
+        int partIndex = partion(numbers,startIndex,endIndex);
+        quickSortSon(numbers,startIndex,partIndex-1);
+        quickSortSon(numbers,partIndex+1,endIndex);
+    }
+
+    /**
+     * 这个获得区分点的函数才是核心，其要解决最少三个问题：
+     * 1.随机从数组中选取一个数，
+     * 2.以选取的这个数为比较标准划分出小于这个数的左数组和大于这个数的右数组，
+     * 3.统计出左数组的个数，得到划分点的下标，4.完成随机数下标的赋值操作。 快速排序不用进行合并操作，因为中间值的下标就是最终排序的下标，当递归完成时，就已经完成了排序！
+     * @param numbers
+     * @param startIndex
+     * @param endIndex
+     * @return
+     */
+    private int partion(int[] numbers, int startIndex, int endIndex) {
+        int partion = 0;
+        int left = 0;
+        int right = endIndex;
+        for(int i=0;i<=endIndex;i++){
+            if(numbers[i]>numbers[0]){
+
+            }
+            if(numbers[endIndex-i]>numbers[0]){
+
+            }
+        }
+        return partion;
+    }
+
+
 }
