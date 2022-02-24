@@ -1,6 +1,11 @@
 package indi.qun.learning.$01_arithmetic.part_02;
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 /**
  * 记录下学习的排序算法代码
  */
@@ -13,6 +18,11 @@ public class MySort {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
+        List list = new ArrayList<Integer>();
+        list.add(1);
+        list.add(2);
+        Collections.sort(list);
+        Arrays.sort(numbers);
     }
 
     /**
