@@ -99,5 +99,5 @@ PhantomReference pr = new PhantomReference (object, queue);
  - 1.String是immutable的典型实现，当通过String str = '字符串'的方式创建一个字符串时，此时的str会去字符串常量池当中寻找，如果有则将str指向该引用，没有则会缓存到常量池当中，但是这样
  创建的字符串在jdk6以下的版本当中，由于字符串常量池缓存有大量的字符串，其位于永久代，不会被垃圾回收期所回收，所以可能会导致OOM异常，这个问题在之后的jdk版本中通过原空间的方式得到了处理。
  而直接new出来的字符串，则会直接进行字符串对象创建
- - 2.StringButter是线程安全的可变字符串，StringBuilder是线程不安全的可变字符串
+ - 2.StringBuffer是线程安全的可变字符串，StringBuilder是线程不安全的可变字符串
  - 3.
