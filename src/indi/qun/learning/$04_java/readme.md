@@ -1,7 +1,8 @@
 <!--ts-->
 
-<div align = "center"><font size = 4>数据结构与算法之美</font></div>
+<div align = "center"><font size = 4>JAVA</font></div>
 
-       
+> **java语言规范:** https://docs.oracle.com/javase/specs/index.html
+> 
 
 <!--te-->
