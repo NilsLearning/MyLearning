@@ -8,7 +8,6 @@
 
 - <$01_arithmetic> 数据结构与算法
   - <part_01> 
-
   
 - <$02_sql> 数据库相关知识
   - <part_01> 关系型数据库-mysql数据库
@@ -18,8 +17,13 @@
 
 - <$04_java> JAVA相关知识
   - <part_01> java面试题
+  - <part_02> Spring 编程常见错误 50 例
   
-- <$05_linux> linux相关知识，以及操作系统相关知识
+- <$05_network> 计算机网络
+  - <part_01> 趣谈网络协议
+  
+- <$06_linux> linux相关知识，以及操作系统相关知识
+
 - <$06_scala>
   - <part_01> scala基础知识
   - <part_02> actor模型
@@ -27,7 +31,7 @@
 - <$07_前端>
   - <part_01> react基础知识
 - <$08_FLINK>
-- <$09_network> 计算机网络
+
 - <$010_浏览器> 
    
 - <$11_工作感悟>
